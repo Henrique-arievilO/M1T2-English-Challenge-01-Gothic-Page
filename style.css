@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: 'Chomsky';
+	src: url(./font/Chomsky.otf);
+}
+
+/* header */
+header{
+    padding: 1%;
+    align-items: center;
+    background-color: #000000;
+}
+
+/* logo */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wingl img{
+    width: 70px;
+    height: 70px;
+}
+
+.wingr img{
+    width: 70px;
+    height: 70px;
+    transform: rotatey(180deg);
+}
+
+h1{
+    font-size: 70px;
+    color: #A571B5;
+    padding: 1%;
+    font-family: 'Chomsky';
+    font-weight: normal;
+}
+
+/* nav */
+
+nav{
+    width: 100%;
+    padding: 1% 0%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+nav li{
+    padding: .5% 4%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 1px 1px 4px #A571B5;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #A571B5;
+}
+
+/* main */
+
+main{
+    background-color: #A571B5;
+    padding: 2%;
+    color: rgb(70, 30, 79);
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 25px 15px 0px;
+    font-family: 'Griffy', cursive;
+    font-weight: normal;
+}
+
+p{
+    font-size: 20px;
+    padding: 10px 25px;
+}
+
+li{
+    list-style: none;
+    padding-left: 20px;
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #461E4F;
+    font-size: 20px;
+    font-family: 'Griffy', cursive;
+    font-weight: normal;
+}
+
+.movies{
+    display: flex;
+    justify-content: center;
+}
+
+.movies img{
+    margin: 10px 10px;
+    width: 200px;
+    height: 270px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: 2s all;
+}
+
+.movies figcaption{
+    margin: 2px 15%;
+    width: 150px;
+    transition: 1s all;
+    border-radius: 5px;
+    padding: 2px 0px;
+    background-color: #461E4F;
+    text-align: center;
+}
+
+.movies a{
+    color: #A571B5;
+}
+
+/* footer */
+
+footer{
+    background-color: #000000;
+}
+
+.mail{
+    color: #A571B5;
+    padding: 25px;
+}
+
+.mail p{
+    padding: 5px 0px;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot button{
+    background-color: #461E4F;
+    padding: 2px 15px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+}
+
+.foot a{
+    color: #A571B5;
+}
+
+.socialMedia{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.socialMedia img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.container{
+    width: 25%;
+    margin-right: 25px;
+}
+.container p{
+    text-align: center;
+    display: block;
+    color: #A571B5;
+    padding: 2px;
+}
+
+/* hover */
+
+/* nav hover */
+nav a:hover{
+    color: white;
+}
+
+/* main hover */
+.movies img:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 6px black;
+}
+
+.bands a:hover, .books a:hover{
+    padding: 3px 0px;
+    background-color: #461E4F;
+    border-radius: 5px;
+    color: #A571B5;
+}
+
+.movies figcaption:hover{
+    box-shadow: 3px 3px 6px black;
+}
+
+.movies a:hover{
+    color: #FFFFFF;
+}
+
+/* footer hover */
+
+.foot a:hover{
+    color: #FFFFFF;
+}
+
+/* responsive */
+
+@media (max-width: 990px){
+    .movies{
+        transform: scale(.75);
+        margin: 10px auto;
+        text-align: center;
+        width: 220px;
+    }
+
+    .movies figure{
+        padding: 7% 0%;
+    }
+
+    .movies figcaption{
+        transform: scale(1.25);
+        margin-top: 10px;
+        margin-left: 15%;
+    }
+
+    .movies img{
+        width: 200px;
+        height: 270px;
+    }
+  
+    .container p{
+        text-align: center;
+        transform: scale(.75);
+    }
+}
+
+@media (max-width: 720px){
+    .logo{
+        transform: scale(.85);
+    }
+    
+    .movies{
+        transform: scale(1);
+        flex-direction: column;
+        margin: 10px auto;
+        text-align: center;
+        width: 220px;
+        justify-content: colum;
+    }
+  
+  .container{
+    margin: 10px;
+    width: 100%;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    text-align: center;
+    width: 50%;
+    margin: 1% 25%;
+  }
+  
+  nav li{
+    margin: 3% 0;
+  }
+}
+
+@media (max-width: 500px){
+  .logo{
+    transform: scale(.55)
+  }
+
+    .movies{
+        transform: scale(1);
+        flex-direction: column;
+        margin: 10px auto;
+        text-align: center;
+        width: 220px;
+        justify-content: column;
+    }
+  
+  .foot{
+    flex-direction: column;
+  }
+}
